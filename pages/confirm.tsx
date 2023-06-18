@@ -287,7 +287,7 @@ export default function Contract(): React.ReactElement {
           <OpenCaseNoteModal
             isOpen={isOpenCaseNoteModalOpen}
             onDismiss={() => setIsOpenCaseNoteModalOpen(false)}
-            addPatient={addPatient} initialNUmber={undefined} />
+            addPatient={addPatient} initialNumber={undefined} />
           <PatientCaseNoteModal
             isOpen={isPatientPageModalOpen}
             onDismiss={() => setIsPatientPageModalOpen(false)}
