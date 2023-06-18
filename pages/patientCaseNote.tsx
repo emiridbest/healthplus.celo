@@ -11,12 +11,12 @@ export default function PatientCaseNoteModal({
 }: {
     isOpen: boolean;
     onDismiss: () => void;
-    initialNUmber,
     getPatientCaseNotes: (number: string) => any,
+    initialNumber,
     updateCaseNote: (number: string, title: string, caseNote: string, pinataCID: string, timestamp: string) => any,
 }) {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [number, setNumber] = useState(initialNumber);
+    const [number, setNumber] = useState<string>(initialNumber);
     const [title, setTitle] = useState("");
     const [pinataCID, setPinataCID] = useState("");
     const [caseNote, setCaseNote] = useState("");
