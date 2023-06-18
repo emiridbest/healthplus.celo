@@ -7,17 +7,16 @@ interface CaseNote {
   title: string;
   review: string;
 }
-function CaseNotes({ getPatientCaseNotes }: { getPatientCaseNotes(number: string): Promise<CaseNote[]> }) {
-  const [caseNotes, setCaseNotes] = useState<CaseNote[]>([]);
-  const [number, setNumber] = useState<CaseNote[]>([]);
 
+function CaseNotes({ getPatientCaseNotes }: { getPatientCaseNotes: (number: string) => Promise<CaseNote[]> }) {
+  const [caseNotes, setCaseNotes] = useState<CaseNote[]>([]);
+  const [number, setNumber] = useState<string>("");
 
   useEffect(() => {
     const fetchCaseNotes = async () => {
       try {
-        const fetchedCaseNotes = await getPatientCaseNotes();
+        const fetchedCaseNotes = await getPatientCaseNotes(number);
         setCaseNotes(fetchedCaseNotes);
-        setNumber(fetchedCaseNotes);
       } catch (error) {
         console.error("Failed to fetch patient case notes:", error);
       }
@@ -25,6 +24,7 @@ function CaseNotes({ getPatientCaseNotes }: { getPatientCaseNotes(number: string
 
     fetchCaseNotes();
   }, [getPatientCaseNotes, number]);
+
   return (
     <table className="min-w-full divide-y divide-gray-200">
       <thead className="bg-gray-50">
