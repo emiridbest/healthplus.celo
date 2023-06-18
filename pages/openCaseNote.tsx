@@ -12,7 +12,7 @@ export default function OpenCaseNoteModal({
 }: {
     isOpen: boolean;
     onDismiss: () => void;
-    initialNUmber,
+    initialNumber,
     addPatient: (number: string, age: string, sex: string, houseAddress: string, maritalStatus: string, occupation: string, religion: string, ethnicity: string, timestamp: string) => any,
 }) {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -25,7 +25,7 @@ export default function OpenCaseNoteModal({
     const [religion, setReligion] = useState("");
     const [ethnicity, setEthnicity] = useState("");
     const [timestamp, setTimestamp] = useState(new Date().toISOString());
-    const [number, setNumber] = useState(initialNumber);
+    const [number, setNumber] = useState<string>(initialNumber);
     const [invalidInput, setInvalidInput] = useState(false);
     const [doneLoading, setDoneLoading] = useState(false);
 
