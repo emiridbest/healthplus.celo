@@ -15,7 +15,7 @@ function CaseNotes({ getPatientCaseNotes }: { getPatientCaseNotes(number: string
   useEffect(() => {
     const fetchCaseNotes = async () => {
       try {
-        const fetchedCaseNotes = await getPatientCaseNotes(number);
+        const fetchedCaseNotes = await getPatientCaseNotes();
         setCaseNotes(fetchedCaseNotes);
         setNumber(fetchedCaseNotes);
       } catch (error) {
