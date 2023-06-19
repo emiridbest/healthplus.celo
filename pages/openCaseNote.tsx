@@ -2,8 +2,8 @@ import Modal from "react-modal";
 import { useState, useEffect } from "react";
 import { validatePhoneNumber } from "../services/twilio";
 
-const pinataApiKey = process.env.REACT_APP_PINATA_API_KEY;
-const pinataSecretApiKey = process.env.REACT_APP_PINATA_API_SECRET;
+const pinataApiKey = process.env.NEXT_APP_PINATA_API_KEY;
+const pinataSecretApiKey = process.env.NEXT_APP_PINATA_API_SECRET;
 export default function OpenCaseNoteModal({
     isOpen,
     onDismiss,
