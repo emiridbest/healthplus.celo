@@ -299,7 +299,6 @@ export default function Contract(): React.ReactElement {
             onDismiss={() => setIsAdminModalOpen(false)}
             assignRole={assignRole}
             revokeRole={revokeRole}
-            initialNumber={""}
           />
           <div>
             <h1>CaseNotes</h1>
