@@ -302,11 +302,11 @@ export default function Contract(): React.ReactElement {
           />
           <div>
             <h1>CaseNotes</h1>
-            <CaseNotes number={number} getPatientCaseNotes={getPatientCaseNotes} />
+            <CaseNotes getPatientCaseNotes={getPatientCaseNotes} />
           </div>
           <div>
             <h1>Patients</h1>
-            <PatientTable getAllPatient={getAllPatient} /> {/* Render the PatientTable component */}
+            <PatientTable getAllPatient={getAllPatient} /> {
           </div>
         </div>)
         : (
