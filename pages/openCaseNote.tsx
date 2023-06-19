@@ -22,7 +22,7 @@ export default function OpenCaseNoteModal({
       religion: any,
       ethnicity: any,
       unixTime: any
-    ) => Promise<[]>;
+    ) => Promise<void>;
     initialNumber: undefined;}) {
     const [activeIndex, setActiveIndex] = useState(0);
 
