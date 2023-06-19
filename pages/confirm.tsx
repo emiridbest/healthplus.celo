@@ -306,7 +306,7 @@ export default function Contract(): React.ReactElement {
           </div>
           <div>
             <h1>Patients</h1>
-            <PatientTable getAllPatient={getAllPatient} /> {
+            <PatientTable getAllPatient={getAllPatient} /> 
           </div>
         </div>)
         : (
