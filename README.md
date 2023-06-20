@@ -5,7 +5,8 @@ This is my submission for Celo's B_WC Series2 hackathon with Masa Prosperity and
 ## TO DO: 
 - Deploy to vercel
 - Mint Masa domain Name
-- Fix botched Demo presentation on youtube and embed into this page.
+- Fix botched Demo presentation on youtube and embed into this page. ![Check Icon](https://example.com/check-icon.png)
+
 
 
 
