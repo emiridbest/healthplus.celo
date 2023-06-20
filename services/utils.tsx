@@ -1,5 +1,5 @@
 
-export const contractAddress ="0x182ac18F9426Fd829E7BD02B465EeF23d0560bFd"
+export const contractAddress ="0x921a15e30b03f5ac03cCa33F0a74AB8EbfC3Cc7B"
 export const contractABI:any[] = [
 	{
 		"anonymous": false,
@@ -213,6 +213,61 @@ export const contractABI:any[] = [
 			}
 		],
 		"name": "assignRole",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			}
+		],
+		"name": "revokeRole",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "number",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "review",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "pinataCID",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "updateCaseNote",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -539,26 +594,6 @@ export const contractABI:any[] = [
 		"type": "function"
 	},
 	{
-		"constant": false,
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "user",
-				"type": "address"
-			},
-			{
-				"internalType": "string",
-				"name": "role",
-				"type": "string"
-			}
-		],
-		"name": "revokeRole",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"constant": true,
 		"inputs": [
 			{
@@ -577,41 +612,6 @@ export const contractABI:any[] = [
 		],
 		"payable": false,
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "number",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "title",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "review",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "pinataCID",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "timestamp",
-				"type": "uint256"
-			}
-		],
-		"name": "updateCaseNote",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
