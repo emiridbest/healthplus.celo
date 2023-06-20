@@ -287,7 +287,7 @@ export default function Contract(): React.ReactElement {
           <OpenCaseNoteModal
             isOpen={isOpenCaseNoteModalOpen}
             onDismiss={() => setIsOpenCaseNoteModalOpen(false)}
-            addPatient={addPatient} initialNumber={undefined} />
+            addPatient={addPatient} initialNUmber={undefined} />
           <PatientCaseNoteModal
             isOpen={isPatientPageModalOpen}
             onDismiss={() => setIsPatientPageModalOpen(false)}
@@ -299,14 +299,15 @@ export default function Contract(): React.ReactElement {
             onDismiss={() => setIsAdminModalOpen(false)}
             assignRole={assignRole}
             revokeRole={revokeRole}
+            initialNumber={""}
           />
           <div>
             <h1>CaseNotes</h1>
-            <CaseNotes getPatientCaseNotes={getPatientCaseNotes} />
+            <CaseNotes  getPatientCaseNotes={getPatientCaseNotes} />
           </div>
           <div>
             <h1>Patients</h1>
-            <PatientTable getAllPatient={getAllPatient} /> 
+            <PatientTable getAllPatient={getAllPatient} /> {/* Render the PatientTable component */}
           </div>
         </div>)
         : (
