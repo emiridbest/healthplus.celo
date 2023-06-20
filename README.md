@@ -7,7 +7,9 @@ This is my submission for Celo's B_WC Series2 hackathon with Masa Prosperity and
 - Mint Masa domain Name
 - Fix botched Demo presentation on youtube and embed into this page. ✅
 
-- Health Plus Demo
+
+ Health Plus Demo
+  
 [![Video Thumbnail](https://img.youtube.com/vi/4xo3iPEHTzE/0.jpg)](https://www.youtube.com/watch?v=4xo3iPEHTzE)
 
 
