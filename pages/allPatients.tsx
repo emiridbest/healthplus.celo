@@ -13,7 +13,7 @@ interface Patient {
   ethnicity: string;
 }
 
-function PatientTable({ getAllPatient }: { getAllPatient: () => Promise<any[]> }) {
+function PatientTable({ getAllPatient }: { getAllPatient: () => Promise<Patient[]> }) {
   const [patients, setPatients] = useState<Patient[]>([]);
 
   useEffect(() => {
