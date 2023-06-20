@@ -2,8 +2,6 @@ import Modal from "react-modal";
 import { useState, useEffect } from "react";
 import { validatePhoneNumber } from "../services/twilio";
 
-const pinataApiKey = process.env.NEXT_APP_PINATA_API_KEY;
-const pinataSecretApiKey = process.env.NEXT_APP_PINATA_API_SECRET;
 export default function OpenCaseNoteModal({
     isOpen,
     onDismiss,
@@ -22,7 +20,7 @@ export default function OpenCaseNoteModal({
       religion: any,
       ethnicity: any,
       unixTime: any
-    ) => Promise<void>;
+    ) => Promise<[]>;
     initialNumber: undefined;}) {
     const [activeIndex, setActiveIndex] = useState(0);
 
